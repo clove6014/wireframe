@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+body {
+	color: #191919;
+    font-size: 14pt;
+    background-image: url(..//images/bokeh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	}
+
+img {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    float: right;
+}
+
+.floatleft {
+	float: left;
+}
+
+article {
+    margin-bottom: 50px;
+}
+h1 {
+    color: #29AAE2;
+    font-family: politica,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24pt;
+}
+p {
+	font-family: canada-type-gibson,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+h3 {
+    font-size: 12pt;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#container{
+	width: 1280px;
+	height: auto;
+	background-color: rgba(255,255,255,1.00);
+	margin: auto;
+}
+
+/*Float the Aside so it displays next to the Main.*/
+aside {
+    width: 150px;
+    height: 1200px;
+    background-color: #646464;
+	float: left;
+}
+
+header {
+    width: 1280px;
+    height: 250px;
+    background-color: #fff;
+    background-image: url(../images/Artboard%201.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 50px 0px 0px 0px
+}
+
+/*Float the main so it shows up next to the Aside. Reduce width by 150px so they both line header.*/
+main {
+    width: 1100px;
+    height: 1600px;
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+/*Clear the float so the footer shows up in the right place again.*/
+footer {
+    width: 1280px;
+    height: 50px;
+    background-color: #646464;
+    clear: both;
+}
+nav {
+    width: 1280px;
+    height: 50px;
+	background-color: white;
+}
+#container nav li {
+    display: block;
+	list-style-type: none;
+    float: left;
+    margin: 0px 60px 0px 0px;
+    width: 80px;
+	font-family: neonoir, sans-serif;
+	font-size: 18pt;
+}
+#container nav ul {
+    margin: auto;
+    width: 565px;
+}
+
+nav a:link {
+    color: #65EBFB;
+	padding: 10px;
+    text-decoration: none;
+}
+nav a:visited {
+    text-decoration: none;
+    color: #5F2575;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #29AAE2;
+    padding: 10px;
+    border-radius: 20px;
+}
+nav a:active {
+    text-decoration: none;
+    color: #191919;
+}
+.submit_btn {
+    width: 170px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #29AAE2;
+    color: #FFFFFF;
+    font-size: 16px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;    
+}
+
+.submit_btn:hover {
+	-webkit-box-shadow: 4px 3px 35px 0px #000000;
+    box-shadow: 4px 3px 35px 0px #000000;
+}
+.column {
+    width: 250px;
+    height: 800px;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 60px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+video{
+	width: 600px;
+	height: 600px;
+	margin: auto;
+}
+
+@media (max-width: 1024px){
+	#container{
+		width: 768px;
+	}
+	header{
+		width: 768px;
+	}
+	nav{
+		width: 768px;
+	}
+	main{
+		width: 598px;
+		height: 2500px
+	}
+	footer{
+		width: 768px;
+	}
+	.column{
+		margin: 0px 20px 0px 25px;
+	}
+}
+
+/*Rules the page will follow on mobile devices*/
+@media only screen and (max-width:375px){
+	#container{
+		width: 300px;
+	}
+	header{
+		width: 300px;
+		background-image: url();
+	}
+	nav{
+		width: 300px;
+		height: 250px;
+		position: static;
+	}
+	main{
+		width: 280px;
+	}
+	footer{
+		width: 300px;
+	}
+	aside{
+		display: none;
+	}
+	#container nav li{
+	display: list-item;
+	list-style-type: none;
+	float: none;
+	margin: 0px 0px 20px 0px;
+	width: 260px;
+	text-align: center;
+	}
+	#container nav ul{
+		width: 260px
+	}
+	nav a:link{
+		display: block;
+		width: 200px;
+		background-color: #65EBFB;
+		color: white;
+	}
+	nav a:visited{
+		text-decoration: none;
+		color: white;
+	}
+}
